@@ -1,0 +1,20 @@
+{
+  "name": "landing-page-3",
+  "version": "1.0.0",
+  "description": "Landing page project",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss styles/sass/index.scss -o styles/css/index.css --watch"
+  },
+  "author": "El Ghalbzouri Adnan",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.4",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
+    "sass": "^1.77.8",
+    "tailwindcss": "^3.4.7"
+  }
+}
