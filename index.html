@@ -14,19 +14,93 @@
   </head>
   <!-- ******* END HEAD ********** -->
   <body>
+    <!-- ******* START HEADER ********** -->
     <header
-      class="bg-no-repeat bg-center bg-cover w-full h-auto"
+      class="bg-no-repeat bg-top bg-cover w-full h-auto"
       style="background-image: url(./assets/svg/background.svg)"
     >
-      <nav class="flex justify-around">
-        <span>Brainwave.io</span>
-        <ul>
-          <li>Demos</li>
-          <li>Pages</li>
-          <li>Support</li>
-          <li>Contact</li>
+      <!-- ******* START NAVBAR ********** -->
+      <nav class="flex flex-row justify-around items-center pt-5 pb-5 gap-80">
+        <div class="flex justify-center items-center">
+          <span class="font-bold text-2xl text-white">Brainwave.io</span>
+        </div>
+        <ul class="flex justify-center items-center gap-14 list-none p-[5px]">
+          <li class="font-bold text-[15px] text-white cursor-pointer">Demos</li>
+          <li class="font-bold text-[15px] text-white cursor-pointer">Pages</li>
+          <li class="font-bold text-[15px] text-white cursor-pointer">
+            Support
+          </li>
+          <li class="font-bold text-[15px] text-white cursor-pointer">
+            Contact
+          </li>
         </ul>
       </nav>
+      <!-- ******* END NAVBAR ********** -->
+      <div class="flex flex-col justify-center items-center pt-48 pb-14">
+        <div class="flex flex-col justify-center items-center gap-7">
+          <span class="uppercase font-bold text-sm text-[#68D585]"
+            >Shared space in your town</span
+          >
+          <h1
+            class="text-white font-bold text-[55px] text-center leading-[60px]"
+          >
+            Rent desk space in a <br />
+            shared office environment
+          </h1>
+        </div>
+        <div class="flex flex-row justify-center items-center pt-10 w-full">
+          <form
+            class="flex flex-row justify-center items-center gap-4 bg-white h-[95px] max-w-3xl w-full rounded-[10px]"
+          >
+            <div
+              class="flex flex-row justify-evenly items-center gap-6 border-solid border-2 border-[#E8E9ED] rounded-lg cursor-pointer w-[250px] h-[50px]"
+            >
+              <div class="flex flex-row justify-center items-center gap-2">
+                <img src="./assets/svg/map.svg" alt="map" title="map" />
+                <p>Select Location</p>
+              </div>
+              <img src="./assets/svg/arrow-bottom.svg" alt="arrow-bottom" />
+            </div>
+            <div
+              class="flex flex-row justify-evenly items-center gap-14 border-solid border-2 border-[#E8E9ED] rounded-lg cursor-pointer w-[250px] h-[50px]"
+            >
+              <div class="flex flex-row justify-center items-center gap-4">
+                <img
+                  src="./assets/svg/calendar.svg"
+                  alt="calendar"
+                  title="calendar"
+                />
+                <p>Select Date</p>
+              </div>
+              <img src="./assets/svg/arrow-bottom.svg" alt="arrow-bottom" />
+            </div>
+            <div
+              class="flex justify-center items-center bg-[#473BF0] rounded-lg cursor-pointer w-[200px] h-[50px]"
+            >
+              <button class="text-base text-white font-bold text-center">
+                Search Place
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="flex flex-row justify-center items-center gap-4 pt-10">
+          <span
+            class="text-white font-bold border-solid border-2 border-white rounded-[50%] w-6 h-6 text-xs flex justify-center items-center"
+            >▶</span
+          >
+          <p class="text-white font-light text-[17px]">
+            Take virtual tour of our spaces
+          </p>
+        </div>
+        <div class="flex justify-center items-center pt-52 cursor-pointer">
+          <span
+            class="text-white font-bold border-solid border-2 border-white rounded-[50%] w-10 h-10 flex justify-center items-center"
+          >
+            <img src="./assets/svg/path.svg" alt="path" title="path" />
+          </span>
+        </div>
+      </div>
     </header>
+    <!-- ******* END HEADER ********** -->
   </body>
 </html>
