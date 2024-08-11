@@ -25,13 +25,17 @@
           <span class="font-bold text-2xl text-white">Brainwave.io</span>
         </div>
         <ul class="flex justify-center items-center gap-14 list-none p-[5px]">
-          <li class="font-bold text-[15px] text-white cursor-pointer">Demos</li>
-          <li class="font-bold text-[15px] text-white cursor-pointer">Pages</li>
-          <li class="font-bold text-[15px] text-white cursor-pointer">
-            Support
+          <li class="font-bold text-[15px] text-white">
+            <a href="#">Demos</a>
+          </li>
+          <li class="font-bold text-[15px] text-white">
+            <a href="#">Pages</a>
+          </li>
+          <li class="font-bold text-[15px] text-white">
+            <a href="#">Support</a>
           </li>
           <li class="font-bold text-[15px] text-white cursor-pointer">
-            Contact
+            <a href="#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -42,15 +46,17 @@
             >Shared space in your town</span
           >
           <h1
-            class="text-white font-bold text-[55px] text-center leading-[60px]"
+            class="text-white font-bold text-[55px] max-[375px]:text-[30px] text-center leading-[60px] max-[375px]:leading-[40px]"
           >
             Rent desk space in a <br />
             shared office environment
           </h1>
         </div>
-        <div class="flex flex-row justify-center items-center pt-10 w-full">
+        <div
+          class="flex lg:flex-row flex-col justify-center items-center pt-10 w-full"
+        >
           <form
-            class="flex flex-row justify-center items-center gap-4 bg-white h-[95px] max-w-3xl w-full rounded-[10px]"
+            class="flex lg:flex-row flex-col justify-center items-center gap-4 bg-white lg:h-[95px] h-64 max-w-3xl lg:w-full w-72 rounded-[10px]"
           >
             <div
               class="flex flex-row justify-evenly items-center gap-7 border-solid border-2 border-[#E8E9ED] rounded-lg cursor-pointer w-[250px] h-[50px]"
@@ -99,7 +105,9 @@
           <span
             class="text-white font-bold border-solid border-2 border-white rounded-[50%] w-10 h-10 flex justify-center items-center"
           >
-            <img src="./assets/svg/path.svg" alt="path" title="path" />
+            <a href="#"
+              ><img src="./assets/svg/path.svg" alt="path" title="path"
+            /></a>
           </span>
         </div>
       </div>
@@ -111,7 +119,7 @@
         class="flex xl:flex-row flex-col justify-center items-center xl:gap-60 gap-32 mb-20"
       >
         <div class="flex flex-col justify-center items-center gap-5">
-          <h2 class="text-[#161C2D] text-5xl text-center font-bold">06</h2>
+          <h3 class="text-[#161C2D] text-5xl text-center font-bold">06</h3>
           <p
             class="text-[#161C2D] text-[19px] font-extralight leading-8 text-center"
           >
@@ -120,7 +128,7 @@
           </p>
         </div>
         <div class="flex flex-col justify-center items-center gap-5">
-          <h2 class="text-[#161C2D] text-5xl text-center font-bold">238</h2>
+          <h3 class="text-[#161C2D] text-5xl text-center font-bold">238</h3>
           <p
             class="text-[#161C2D] text-[19px] font-extralight leading-8 text-center"
           >
@@ -129,7 +137,7 @@
           </p>
         </div>
         <div class="flex flex-col justify-center items-center gap-5">
-          <h2 class="text-[#161C2D] text-5xl text-center font-bold">1,395</h2>
+          <h3 class="text-[#161C2D] text-5xl text-center font-bold">1,395</h3>
           <p
             class="text-[#161C2D] text-[19px] font-extralight leading-8 text-center"
           >
@@ -148,9 +156,9 @@
       class="flex flex-col justify-center items-center gap-20 mb-36 pt-10"
     >
       <div class="flex flex-col justify-center items-center gap-5">
-        <h2 class="text-center text-[#161C2D] text-5xl font-bold">
+        <h3 class="text-center text-[#161C2D] sm:text-5xl text-4xl font-bold">
           Popular locations
-        </h2>
+        </h3>
         <p
           class="text-center text-[#161C2D] text-[19px] font-extralight leading-8"
         >
@@ -158,9 +166,16 @@
           easily without any coding.
         </p>
       </div>
-      <div class="flex xl:flex-row flex-col justify-center items-start gap-10">
+      <div
+        class="flex xl:flex-row flex-col justify-center xl:items-start items-center gap-10"
+      >
         <article class="flex flex-col justify-center items-center mt-5">
-          <img src="./assets/svg/img-1.svg" alt="img-1" title="img-1" />
+          <img
+            src="./assets/svg/img-1.svg"
+            alt="img-1"
+            title="img-1"
+            class="sm:max-w-[330px] w-full p-5"
+          />
           <div class="flex flex-col justify-center items-center -mt-16">
             <h5 class="text-center text-[#161C2D] text-2xl font-bold">
               Beauview
@@ -171,7 +186,12 @@
           </div>
         </article>
         <article class="flex flex-col justify-center items-center">
-          <img src="./assets/svg/img-2.svg" alt="img-2" title="img-2" />
+          <img
+            src="./assets/svg/img-2.svg"
+            alt="img-2"
+            title="img-2"
+            class="sm:max-w-[350px] max-w-[330px] w-full p-5"
+          />
           <div class="flex flex-col justify-center items-center pt-11">
             <h5 class="text-center text-[#161C2D] text-2xl font-bold">
               Haleyborough
@@ -182,7 +202,12 @@
           </div>
         </article>
         <article class="flex flex-col justify-center items-center">
-          <img src="./assets/svg/img-3.svg" alt="img-3" title="img-3" />
+          <img
+            src="./assets/svg/img-3.svg"
+            alt="img-3"
+            title="img-3"
+            class="sm:max-w-[350px] max-w-[330px] w-full p-5"
+          />
           <div class="flex flex-col justify-center items-center pt-11">
             <h5 class="text-center text-[#161C2D] text-2xl font-bold">
               Jeromyshire
@@ -201,62 +226,90 @@
         <div
           class="flex flex-col xl:justify-start justify-center xl:items-start items-center pt-32"
         >
-          <h2
-            class="text-[#161C2D] font-bold text-5xl leading-tight xl:text-justify text-center"
+          <h3
+            class="text-[#161C2D] font-bold sm:text-5xl text-4xl leading-tight xl:text-justify text-center"
           >
             Work around very <br />
             talented people.
-          </h2>
+          </h3>
           <p
             class="text-[#161C2D] font-extralight text-[19px] leading-7 xl:text-justify text-center pt-6 pb-28"
           >
             With lots of unique blocks, you can easily build <br />
             a page easily without any coding.
           </p>
-          <img src="./assets/svg/img-4.svg" alt="img-4" title="img-4" />
+          <img
+            src="./assets/svg/img-4.svg"
+            alt="img-4"
+            title="img-4"
+            class="max-w-[520] w-full sm:p-0 p-5"
+          />
         </div>
         <div class="flex justify-center items-center xl:-mt-16 mt-10">
-          <img src="./assets/svg/img-5.svg" alt="img-5" title="img-5" />
+          <img
+            src="./assets/svg/img-5.svg"
+            alt="img-5"
+            title="img-5"
+            class="max-w-[520] w-full sm:p-0 p-5"
+          />
         </div>
       </div>
       <div
         class="flex xl:flex-row flex-col justify-center items-center xl:gap-[50px] gap-32 mt-36 pb-36"
       >
-        <div class="flex flex-row justify-start items-start gap-7">
+        <div
+          class="flex sm:flex-row flex-col sm:justify-start justify-center sm:items-start items-center gap-7"
+        >
           <img
             src="./assets/svg/desk-drawer.svg"
             alt="desk-drawer"
             title="desk-drawer"
           />
-          <div class="flex flex-col justify-start items-start gap-5">
+          <div
+            class="flex flex-col sm:justify-start justify-center sm:items-start items-center gap-5"
+          >
             <h5 class="text-[#161C2D] font-bold text-[21px]">Dedicated Desk</h5>
-            <p class="text-[#161C2D] font-extralight text-[17px] leading-7">
+            <p
+              class="text-[#161C2D] font-extralight text-[17px] leading-7 sm:text-justify text-center"
+            >
               With lots of unique blocks, you can <br />
               easily build a page without coding. <br />
               Build your next landing page.
             </p>
           </div>
         </div>
-        <div class="flex flex-row justify-start items-start gap-7">
+        <div
+          class="flex sm:flex-row flex-col sm:justify-start justify-center sm:items-start items-center gap-7"
+        >
           <img src="./assets/svg/wifi.svg" alt="wifi" title="wifi" />
-          <div class="flex flex-col justify-start items-start gap-5">
+          <div
+            class="flex flex-col sm:justify-start justify-center sm:items-start items-center gap-5"
+          >
             <h5 class="text-[#161C2D] font-bold text-[21px]">
               High Speed Internet
             </h5>
-            <p class="text-[#161C2D] font-extralight text-[17px] leading-7">
+            <p
+              class="text-[#161C2D] font-extralight text-[17px] leading-7 sm:text-justify text-center"
+            >
               With lots of unique blocks, you can <br />
               easily build a page without coding. <br />
               Build your next landing page.
             </p>
           </div>
         </div>
-        <div class="flex flex-row justify-start items-start gap-7">
+        <div
+          class="flex sm:flex-row flex-col sm:justify-start justify-center sm:items-start items-center gap-7"
+        >
           <img src="./assets/svg/mug.svg" alt="mug" title="mug" />
-          <div class="flex flex-col justify-start items-start gap-5">
+          <div
+            class="flex flex-col sm:justify-start justify-center sm:items-start items-center gap-5"
+          >
             <h5 class="text-[#161C2D] font-bold text-[21px]">
               Unlimited Coffee
             </h5>
-            <p class="text-[#161C2D] font-extralight text-[17px] leading-7">
+            <p
+              class="text-[#161C2D] font-extralight text-[17px] leading-7 sm:text-justify text-center"
+            >
               With lots of unique blocks, you can <br />
               easily build a page without coding. <br />
               Build your next landing page.
@@ -279,12 +332,12 @@
           <div
             class="flex flex-col xl:justify-start justify-center xl:items-start items-center gap-5"
           >
-            <h2
-              class="text-white font-bold text-5xl leading-[60px] xl:text-justify text-center"
+            <h3
+              class="text-white font-bold sm:text-5xl text-4xl sm:leading-[60px] leading-[45px] xl:text-justify text-center"
             >
               We are always here <br />
               for your backup.
-            </h2>
+            </h3>
             <p
               class="text-white font-extralight text-[19px] leading-8 xl:text-justify text-center"
             >
@@ -295,31 +348,47 @@
           <div
             class="flex flex-col justify-start xl:items-start items-center gap-14"
           >
-            <div class="flex flex-row justify-start items-start gap-5">
+            <div
+              class="flex sm:flex-row flex-col sm:justify-start justify-center sm:items-start items-center gap-5"
+            >
               <span
                 class="bg-[#68D585] rounded-[50%] w-8 h-8 flex justify-center items-center mt-2"
                 ><img src="./assets/svg/check.svg" alt="check" title="check"
               /></span>
-              <div class="flex flex-col justify-start items-start gap-2">
-                <h5 class="text-white text-[21px] font-bold">
+              <div
+                class="flex flex-col sm:justify-start justify-center sm:items-start items-center gap-2"
+              >
+                <h5
+                  class="text-white text-[21px] font-bold sm:text-justify text-center"
+                >
                   Noise Free Locations
                 </h5>
-                <p class="text-white text-[17px] font-extralight leading-8">
+                <p
+                  class="text-white text-[17px] font-extralight leading-8 sm:text-justify text-center"
+                >
                   With lots of unique blocks, you can easily <br />
                   build a page without coding.
                 </p>
               </div>
             </div>
-            <div class="flex flex-row justify-start items-start gap-5">
+            <div
+              class="flex sm:flex-row flex-col sm:justify-start justify-center sm:items-start items-center gap-5"
+            >
               <span
                 class="bg-[#68D585] rounded-[50%] w-8 h-8 flex justify-center items-center mt-2"
                 ><img src="./assets/svg/check.svg" alt="check" title="check"
               /></span>
-              <div class="flex flex-col justify-start items-start gap-2">
-                <h5 class="text-white text-[21px] font-bold">
+              <div
+                class="flex flex-col sm:justify-start justify-center sm:items-start items-center gap-2"
+              >
+                <h5
+                  class="text-white text-[21px] font-bold sm:text-justify text-center"
+                >
                   24/7 Hour Support
                 </h5>
-                <p class="text-white text-[17px] font-extralight leading-8">
+                <p
+                  class="text-white text-[17px] font-extralight leading-8 sm:text-justify text-center"
+                >
                   With lots of unique blocks, you can easily <br />
                   build a page without coding.
                 </p>
@@ -330,13 +399,14 @@
         <div class="flex flex-col justify-start items-start">
           <div class="flex flex-col justify-center">
             <div
-              class="bg-white cursor-pointer rounded-t-lg w-[447px] h-auto shadow-[0px_-5px_0px_0px_#67D684] hover:bg-gray-50"
+              class="bg-white cursor-pointer rounded-t-lg sm:max-w-[447px] max-w-[313px] w-full h-auto shadow-[0px_-5px_0px_0px_#67D684] hover:bg-gray-50"
             >
               <button
                 type="button"
                 class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
               >
-                <span class="flex text-lg font-semibold text-black"
+                <span
+                  class="flex sm:text-lg text-[15px] font-semibold text-black text-start"
                   >How to setup Shade Pro?</span
                 >
                 <img
@@ -346,7 +416,7 @@
                   class="w-[8px] h-auto"
                 />
               </button>
-              <div style="display: none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
                 <p>
                   With lots of unique blocks, you can easily build a page with
                   coding. Build your next landing page. Integer ut obe ryn. Sed
@@ -358,13 +428,14 @@
               </div>
             </div>
             <div
-              class="bg-white cursor-pointer hover:bg-gray-50 w-[447px] h-auto"
+              class="bg-white cursor-pointer hover:bg-gray-50 sm:max-w-[447px] max-w-[313px] w-full h-auto"
             >
               <button
                 type="button"
                 class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
               >
-                <span class="flex text-lg font-semibold text-black"
+                <span
+                  class="flex sm:text-lg text-[15px] font-semibold text-black text-start"
                   >Can I use Shade Pro for my clients?</span
                 >
                 <img
@@ -374,7 +445,7 @@
                   class="w-[8px] h-auto"
                 />
               </button>
-              <div style="display: none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
                 <p>
                   With lots of unique blocks, you can easily build a page with
                   coding. Build your next landing page. Integer ut obe ryn. Sed
@@ -386,13 +457,14 @@
               </div>
             </div>
             <div
-              class="bg-white cursor-pointer hover:bg-gray-50 w-[447px] h-auto"
+              class="bg-white cursor-pointer hover:bg-gray-50 sm:max-w-[447px] max-w-[313px] w-full h-auto"
             >
               <button
                 type="button"
                 class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
               >
-                <span class="flex text-lg font-semibold text-black"
+                <span
+                  class="flex sm:text-lg text-[15px] font-semibold text-black text-start"
                   >How often do you release update?</span
                 >
                 <img
@@ -402,7 +474,7 @@
                   class="w-[8px] h-auto"
                 />
               </button>
-              <div style="display: none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
                 <p>
                   With lots of unique blocks, you can easily build a page with
                   coding. Build your next landing page. Integer ut obe ryn. Sed
@@ -414,13 +486,14 @@
               </div>
             </div>
             <div
-              class="bg-white cursor-pointer hover:bg-gray-50 rounded-b-lg w-[447px] h-auto"
+              class="bg-white cursor-pointer hover:bg-gray-50 rounded-b-lg sm:max-w-[447px] max-w-[313px] w-full h-auto"
             >
               <button
                 type="button"
                 class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
               >
-                <span class="flex text-lg font-semibold text-black"
+                <span
+                  class="flex sm:text-lg text-[15px] font-semibold text-black text-start"
                   >How can I access to old version?</span
                 >
                 <img
@@ -430,15 +503,12 @@
                   class="w-[8px] h-auto"
                 />
               </button>
-              <div style="display: none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
                 <p>
                   With lots of unique blocks, you can easily build a page with
                   coding. Build your next landing page. Integer ut obe ryn. Sed
                   feugiat vitae turpis a porta.
                 </p>
-              </div>
-              <div class="flex justify-center items-center">
-                <hr class="border border-gray-200 w-[400px]" />
               </div>
             </div>
           </div>
@@ -450,23 +520,25 @@
     <section class="mt-32 mb-28">
       <div class="flex flex-col justify-center items-center gap-5">
         <div class="flex flex-col justify-center items-center gap-5">
-          <h3 class="text-center text-5xl text-[#161C2D] font-bold">
+          <h3 class="text-center sm:text-5xl text-4xl text-[#161C2D] font-bold">
             Get latest updates
           </h3>
-          <p class="text-center text-[19px] leading-8 font-extralight">
+          <p
+            class="text-center sm:text-[19px] text-[16px] leading-8 font-extralight"
+          >
             With lots of unique blocks, you can easily build a page <br />
             without coding. Build your next landing page.
           </p>
         </div>
         <div class="flex flex-col justify-center items-center gap-5 mt-6">
           <input
-            class="border rounded-lg py-2 px-3 text-[#161C2D] w-[369px] h-[59px] text-[17px] font-medium"
+            class="border rounded-lg py-2 px-3 text-[#161C2D] sm:max-w-[369px] max-w-[300px] w-full h-[59px] text-[17px] font-medium"
             type="text"
             placeholder="Enter your email"
           />
           <button
             type="button"
-            class="text-center text-white font-bold text-[17px] bg-[#473BF0] w-[368px] h-[59px] rounded-lg"
+            class="text-center text-white font-bold text-[17px] bg-[#473BF0] sm:max-w-[368px] max-w-[300px] w-full h-[59px] rounded-lg"
           >
             Subscribe
           </button>
@@ -497,10 +569,18 @@
             Company
           </h5>
           <ul class="leading-10 list-none xl:text-justify text-center">
-            <li class="text-[#161C2D] font-light text-[17px]">About us</li>
-            <li class="text-[#161C2D] font-light text-[17px]">Contact us</li>
-            <li class="text-[#161C2D] font-light text-[17px]">Careers</li>
-            <li class="text-[#161C2D] font-light text-[17px]">Press</li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">About us</a>
+            </li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">Contact us</a>
+            </li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">Careers</a>
+            </li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">Press</a>
+            </li>
           </ul>
         </div>
         <div
@@ -512,11 +592,21 @@
             Product
           </h5>
           <ul class="leading-10 list-none xl:text-justify text-center">
-            <li class="text-[#161C2D] font-light text-[17px]">Features</li>
-            <li class="text-[#161C2D] font-light text-[17px]">Pricing</li>
-            <li class="text-[#161C2D] font-light text-[17px]">News</li>
-            <li class="text-[#161C2D] font-light text-[17px]">Help desk</li>
-            <li class="text-[#161C2D] font-light text-[17px]">Support</li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">Features</a>
+            </li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">News</a>
+            </li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">Help desk</a>
+            </li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">Support</a>
+            </li>
           </ul>
         </div>
         <div
@@ -529,15 +619,17 @@
           </h5>
           <ul class="leading-10 list-none xl:text-justify text-center">
             <li class="text-[#161C2D] font-light text-[17px]">
-              Digital Marketing
+              <a href="#">Digital Marketing</a>
             </li>
             <li class="text-[#161C2D] font-light text-[17px]">
-              Content Writing
+              <a href="#">Content Writing</a>
             </li>
             <li class="text-[#161C2D] font-light text-[17px]">
-              SEO for Business
+              <a href="#">SEO for Business</a>
             </li>
-            <li class="text-[#161C2D] font-light text-[17px]">UI Design</li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">UI Design</a>
+            </li>
           </ul>
         </div>
         <div
@@ -550,12 +642,14 @@
           </h5>
           <ul class="leading-10 list-none xl:text-justify text-center">
             <li class="text-[#161C2D] font-light text-[17px]">
-              Privacy Policy
+              <a href="#">Privacy Policy</a>
             </li>
             <li class="text-[#161C2D] font-light text-[17px]">
-              Terms & Conditions
+              <a href="#">Terms & Conditions</a>
             </li>
-            <li class="text-[#161C2D] font-light text-[17px]">Return Policy</li>
+            <li class="text-[#161C2D] font-light text-[17px]">
+              <a href="#">Return Policy</a>
+            </li>
           </ul>
         </div>
         <div
@@ -568,10 +662,10 @@
           </h5>
           <ul class="leading-10 list-none xl:text-justify text-center">
             <li class="text-[#473BF0] font-bold text-[17px]">
-              support@brainwave.io
+              <a href="#">support@brainwave.io</a>
             </li>
             <li class="text-[#473BF0] font-bold text-[17px]">
-              +133-394-3439-1435
+              <a href="#"> +133-394-3439-1435</a>
             </li>
           </ul>
         </div>
@@ -582,7 +676,7 @@
           class="flex xl:flex-row flex-col justify-center items-center xl:gap-[565px] gap-16 mt-10 mb-10"
         >
           <p
-            class="text-[#161C2D] text-[15px] font-light flex flex-row justify-center items-center gap-3"
+            class="text-[#161C2D] sm:text-[15px] text-[9px] font-light flex flex-row justify-center items-center gap-3"
           >
             © 2024 Copyright, All Right Reserved, Made by Seju_ui_ux with
             <img src="./assets/svg/heart.svg" alt="heart" title="heart" />
@@ -594,7 +688,6 @@
                   src="./assets/svg/social-1.svg"
                   alt="social-1"
                   title="social-1"
-                  class="img-fluid"
               /></a>
             </li>
             <li>
@@ -603,7 +696,6 @@
                   src="./assets/svg/social-2.svg"
                   alt="social-2"
                   title="social-2"
-                  class="img-fluid"
               /></a>
             </li>
             <li>
@@ -612,7 +704,6 @@
                   src="./assets/svg/social-3.svg"
                   alt="social-3"
                   title="social-3"
-                  class="img-fluid"
               /></a>
             </li>
             <li>
@@ -621,7 +712,6 @@
                   src="./assets/svg/social-4.svg"
                   alt="social-4"
                   title="social-4"
-                  class="img-fluid"
               /></a>
             </li>
           </ul>
