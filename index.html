@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./styles/css/index.css" />
     <!-- Title -->
     <title>Brainwave</title>
+    <!-- Scripts -->
+    <script defer src="./scripts/navbar.js"></script>
   </head>
   <!-- ******* END HEAD ********** -->
   <body>
@@ -20,24 +22,48 @@
       style="background-image: url(./assets/svg/background.svg)"
     >
       <!-- ******* START NAVBAR ********** -->
-      <nav class="flex flex-row justify-around items-center pt-5 pb-5 gap-80">
-        <div class="flex justify-center items-center">
+      <nav
+        class="flex flex-row justify-around items-center pt-5 pb-5 sm:gap-80 gap-60 max-[500px]:gap-20"
+      >
+        <div class="flex justify-start items-center">
           <span class="font-bold text-2xl text-white">Brainwave.io</span>
         </div>
-        <ul class="flex justify-center items-center gap-14 list-none p-[5px]">
-          <li class="font-bold text-[15px] text-white">
-            <a href="#">Demos</a>
-          </li>
-          <li class="font-bold text-[15px] text-white">
-            <a href="#">Pages</a>
-          </li>
-          <li class="font-bold text-[15px] text-white">
-            <a href="#">Support</a>
-          </li>
-          <li class="font-bold text-[15px] text-white cursor-pointer">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+        <div class="flex justify-end lg:items-center items-start relative">
+          <ul
+            class="hidden lg:flex lg:flex-row flex-col lg:justify-end justify-start lg:items-center items-start gap-14 list-none lg:p-[5px] p-6 lg:bg-inherit bg-black lg:h-0 h-full lg:w-0 w-[70%] right-0 top-0 max-[1024px]:fixed"
+            id="lists-menu"
+          >
+            <li class="font-bold text-[15px] text-white">
+              <a href="#">Demos</a>
+            </li>
+            <li class="font-bold text-[15px] text-white">
+              <a href="#">Pages</a>
+            </li>
+            <li class="font-bold text-[15px] text-white">
+              <a href="#">Support</a>
+            </li>
+            <li class="font-bold text-[15px] text-white">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="lg:hidden flex justify-center items-center cursor-pointer relative"
+            id="btn-menu"
+          >
+            <img
+              src="./assets/svg/hamburger.svg"
+              alt="hamburger"
+              title="hamburger"
+              class="sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] block top-[3px]"
+            />
+            <img
+              src="./assets/svg/close.svg"
+              alt="close"
+              title="close"
+              class="sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] hidden fixed z-[3] top-5 right-[30px]"
+            />
+          </button>
+        </div>
       </nav>
       <!-- ******* END NAVBAR ********** -->
       <div class="flex flex-col justify-center items-center pt-48 pb-14">
