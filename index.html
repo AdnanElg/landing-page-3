@@ -23,14 +23,14 @@
     >
       <!-- ******* START NAVBAR ********** -->
       <nav
-        class="flex flex-row justify-around items-center pt-5 pb-5 sm:gap-80 gap-60 max-[500px]:gap-20"
+        class="flex flex-row lg:justify-around justify-between items-center pt-5 pb-5 gap-60 max-[500px]:gap-0 lg:px-0 px-5"
       >
         <div class="flex justify-start items-center">
           <span class="font-bold text-2xl text-white">Brainwave.io</span>
         </div>
         <div class="flex justify-end lg:items-center items-start relative">
           <ul
-            class="hidden lg:flex lg:flex-row flex-col lg:justify-end justify-start lg:items-center items-start gap-14 list-none lg:p-[5px] p-6 lg:bg-inherit bg-black lg:h-0 h-full lg:w-0 w-[70%] right-0 top-0 max-[1024px]:fixed"
+            class="flex lg:flex-row flex-col lg:justify-end justify-start lg:items-center items-start gap-14 list-none lg:p-[5px] p-6 lg:bg-inherit bg-black lg:h-0 h-full lg:w-0 w-[70%] right-0 top-0 max-[1023px]:fixed"
             id="lists-menu"
           >
             <li class="font-bold text-[15px] text-white">
@@ -47,20 +47,20 @@
             </li>
           </ul>
           <button
-            class="lg:hidden flex justify-center items-center cursor-pointer relative"
+            class="flex justify-center items-center cursor-pointer relative"
             id="btn-menu"
           >
             <img
               src="./assets/svg/hamburger.svg"
               alt="hamburger"
               title="hamburger"
-              class="sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] block top-[3px]"
+              class="sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] top-[3px]"
             />
             <img
               src="./assets/svg/close.svg"
               alt="close"
               title="close"
-              class="sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] hidden fixed z-[3] top-5 right-[30px]"
+              class="sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] fixed z-[3] top-[25px] right-5"
             />
           </button>
         </div>
