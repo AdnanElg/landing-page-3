@@ -13,6 +13,7 @@
     <title>Brainwave</title>
     <!-- Scripts -->
     <script defer src="./scripts/navbar.js"></script>
+    <script defer src="./scripts/accordion.js"></script>
   </head>
   <!-- ******* END HEAD ********** -->
   <body>
@@ -30,7 +31,7 @@
         </div>
         <div class="flex justify-end lg:items-center items-start relative">
           <ul
-            class="flex lg:flex-row flex-col lg:justify-end justify-start lg:items-center items-start gap-14 list-none lg:p-[5px] p-6 lg:bg-inherit bg-black lg:h-0 h-full lg:w-0 w-[70%] right-0 top-0 max-[1023px]:fixed"
+            class="max-lg:hidden flex lg:flex-row flex-col lg:justify-end justify-start lg:items-center items-start gap-14 list-none lg:p-[5px] p-6 lg:bg-inherit bg-black lg:h-0 h-full lg:w-0 w-[70%] right-0 top-0 max-[1023px]:fixed"
             id="lists-menu"
           >
             <li class="font-bold text-[15px] text-white">
@@ -54,13 +55,13 @@
               src="./assets/svg/hamburger.svg"
               alt="hamburger"
               title="hamburger"
-              class="sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] top-[3px]"
+              class="block sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] top-[3px]"
             />
             <img
               src="./assets/svg/close.svg"
               alt="close"
               title="close"
-              class="sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] fixed z-[3] top-[25px] right-5"
+              class="hidden sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] fixed z-[3] top-[25px] right-5"
             />
           </button>
         </div>
@@ -347,13 +348,13 @@
     <!-- ******* END SECTION 3 ********** -->
     <!-- ******* START SECTION 4 ********** -->
     <section
-      class="bg-[#161C2D] xl:h-[795px] h-auto w-full xl:mt-[730px] mt-0 pb-36"
+      class="bg-[#161C2D] xl:h-[795px] h-auto w-full xl:mt-[730px] flex flex-row justify-center items-center"
     >
       <div
-        class="flex xl:flex-row flex-col justify-center items-center xl:gap-56 gap-20"
+        class="flex xl:flex-row flex-col justify-center items-center xl:gap-56 gap-20 h-[750px] max-[1280px]:h-auto max-[1280px]:py-14"
       >
         <div
-          class="flex flex-col xl:justify-start justify-center xl:items-start items-center gap-20 pt-32"
+          class="flex flex-col xl:justify-start justify-center xl:items-start items-center gap-20"
         >
           <div
             class="flex flex-col xl:justify-start justify-center xl:items-start items-center gap-5"
@@ -423,11 +424,12 @@
           </div>
         </div>
         <div class="flex flex-col justify-start items-start">
-          <div class="flex flex-col justify-center">
+          <div class="flex flex-col justify-center sm:w-[447px] w-[313px]">
             <div
-              class="bg-white cursor-pointer rounded-t-lg sm:max-w-[447px] max-w-[313px] w-full h-auto shadow-[0px_-5px_0px_0px_#67D684] hover:bg-gray-50"
+              class="bg-white cursor-pointer rounded-t-lg w-full h-auto shadow-[0px_-5px_0px_0px_#67D684] hover:bg-gray-50"
             >
               <button
+                id="accordion-1"
                 type="button"
                 class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
               >
@@ -442,7 +444,7 @@
                   class="w-[8px] h-auto"
                 />
               </button>
-              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <div id="block-1" class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
                 <p>
                   With lots of unique blocks, you can easily build a page with
                   coding. Build your next landing page. Integer ut obe ryn. Sed
@@ -453,10 +455,9 @@
                 <hr class="border border-gray-200 w-[400px]" />
               </div>
             </div>
-            <div
-              class="bg-white cursor-pointer hover:bg-gray-50 sm:max-w-[447px] max-w-[313px] w-full h-auto"
-            >
+            <div class="bg-white cursor-pointer hover:bg-gray-50 w-full h-auto">
               <button
+                id="accordion-2"
                 type="button"
                 class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
               >
@@ -471,7 +472,7 @@
                   class="w-[8px] h-auto"
                 />
               </button>
-              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <div id="block-2" class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
                 <p>
                   With lots of unique blocks, you can easily build a page with
                   coding. Build your next landing page. Integer ut obe ryn. Sed
@@ -482,10 +483,9 @@
                 <hr class="border border-gray-200 w-[400px]" />
               </div>
             </div>
-            <div
-              class="bg-white cursor-pointer hover:bg-gray-50 sm:max-w-[447px] max-w-[313px] w-full h-auto"
-            >
+            <div class="bg-white cursor-pointer hover:bg-gray-50 w-full h-auto">
               <button
+                id="accordion-3"
                 type="button"
                 class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
               >
@@ -500,7 +500,7 @@
                   class="w-[8px] h-auto"
                 />
               </button>
-              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <div id="block-3" class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
                 <p>
                   With lots of unique blocks, you can easily build a page with
                   coding. Build your next landing page. Integer ut obe ryn. Sed
@@ -512,9 +512,10 @@
               </div>
             </div>
             <div
-              class="bg-white cursor-pointer hover:bg-gray-50 rounded-b-lg sm:max-w-[447px] max-w-[313px] w-full h-auto"
+              class="bg-white cursor-pointer hover:bg-gray-50 rounded-b-lg w-full h-auto"
             >
               <button
+                id="accordion-4"
                 type="button"
                 class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
               >
@@ -529,7 +530,7 @@
                   class="w-[8px] h-auto"
                 />
               </button>
-              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <div id="block-4" class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
                 <p>
                   With lots of unique blocks, you can easily build a page with
                   coding. Build your next landing page. Integer ut obe ryn. Sed
@@ -556,14 +557,15 @@
             without coding. Build your next landing page.
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center gap-5 mt-6">
+        <form class="flex flex-col justify-center items-center gap-5 mt-6">
           <input
             class="border rounded-lg py-2 px-3 text-[#161C2D] sm:max-w-[369px] max-w-[300px] w-full h-[59px] text-[17px] font-medium"
             type="text"
             placeholder="Enter your email"
+            required
           />
           <button
-            type="button"
+            type="submit"
             class="text-center text-white font-bold text-[17px] bg-[#473BF0] sm:max-w-[368px] max-w-[300px] w-full h-[59px] rounded-lg"
           >
             Subscribe
@@ -574,7 +576,7 @@
             We'll never share your details with third parties. <br />
             View our Privacy Policy for more info.
           </p>
-        </div>
+        </form>
       </div>
       <div class="flex justify-center items-center mt-36">
         <hr class="border-t border-gray-300 w-full" />
