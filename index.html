@@ -12,8 +12,14 @@
     <!-- Title -->
     <title>Brainwave</title>
     <!-- Scripts -->
+    <script
+      defer
+      src="./node_modules/flowbite/dist/flowbite.min.js
+    "
+    ></script>
     <script defer src="./scripts/navbar.js"></script>
     <script defer src="./scripts/accordion.js"></script>
+    <script defer src="./scripts/datepicker.js"></script>
   </head>
   <!-- ******* END HEAD ********** -->
   <body>
@@ -31,7 +37,7 @@
         </div>
         <div class="flex justify-end lg:items-center items-start relative">
           <ul
-            class="max-lg:hidden flex lg:flex-row flex-col lg:justify-end justify-start lg:items-center items-start gap-14 list-none lg:p-[5px] p-6 lg:bg-inherit bg-black lg:h-0 h-full lg:w-0 w-[70%] right-0 top-0 max-[1023px]:fixed"
+            class="max-lg:hidden flex lg:flex-row flex-col lg:justify-end justify-start lg:items-center items-start gap-14 list-none lg:p-[5px] p-6 lg:bg-inherit bg-black lg:h-0 h-full lg:w-0 w-[70%] right-0 top-0 max-[1023px]:fixed z-[5]"
             id="lists-menu"
           >
             <li class="font-bold text-[15px] text-white">
@@ -61,7 +67,7 @@
               src="./assets/svg/close.svg"
               alt="close"
               title="close"
-              class="hidden sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] fixed z-[3] top-[25px] right-5"
+              class="hidden sm:w-[25px] w-[23px] sm:h-[25px] h-[23px] fixed z-[6] top-[25px] right-5"
             />
           </button>
         </div>
@@ -83,19 +89,50 @@
           class="flex lg:flex-row flex-col justify-center items-center pt-10 w-full"
         >
           <form
-            class="flex lg:flex-row flex-col justify-center items-center gap-4 bg-white lg:h-[95px] h-64 max-w-3xl lg:w-full w-72 rounded-[10px]"
+            class="flex lg:flex-row flex-col justify-center items-center gap-4 bg-white lg:h-[95px] h-64 max-w-3xl lg:w-full w-[296px] rounded-[10px]"
           >
             <div
-              class="flex flex-row justify-evenly items-center gap-7 border-solid border-2 border-[#E8E9ED] rounded-lg cursor-pointer w-[250px] h-[50px]"
+              class="flex flex-row justify-evenly items-center gap-7 border-solid border-2 border-[#E8E9ED] rounded-lg cursor-pointer w-[250px] h-[50px] relative"
             >
               <div class="flex flex-row justify-center items-center gap-4">
                 <img src="./assets/svg/map.svg" alt="map" title="map" />
                 <p>Select Location</p>
               </div>
               <img src="./assets/svg/arrow-bottom.svg" alt="arrow-bottom" />
+              <ul
+                id="dropdownLocation"
+                class="top-full absolute left-0 mt-2 w-[250px] border-none bg-white rounded-b-lg shadow h-[160px] overflow-y-auto z-[3]"
+              >
+                <li class="px-4 py-2 hover:bg-[#E8E9ED] cursor-pointer">
+                  Canada
+                </li>
+                <li class="px-4 py-2 hover:bg-[#E8E9ED] cursor-pointer">
+                  France
+                </li>
+                <li
+                  class="px-4 py-2 hover:bg-[#E8E9ED] cursor-pointer rounded-b-lg"
+                >
+                  Maroc
+                </li>
+                <li
+                  class="px-4 py-2 hover:bg-[#E8E9ED] cursor-pointer rounded-b-lg"
+                >
+                  Suisse
+                </li>
+                <li
+                  class="px-4 py-2 hover:bg-[#E8E9ED] cursor-pointer rounded-b-lg"
+                >
+                  Italie
+                </li>
+                <li
+                  class="px-4 py-2 hover:bg-[#E8E9ED] cursor-pointer rounded-b-lg"
+                >
+                  Norvège
+                </li>
+              </ul>
             </div>
             <div
-              class="flex flex-row justify-evenly items-center gap-14 border-solid border-2 border-[#E8E9ED] rounded-lg cursor-pointer w-[250px] h-[50px]"
+              class="flex flex-row justify-evenly items-center gap-14 border-solid border-2 border-[#E8E9ED] rounded-lg cursor-pointer w-[250px] h-[50px] relative"
             >
               <div class="flex flex-row justify-center items-center gap-4">
                 <img
@@ -106,6 +143,12 @@
                 <p>Select Date</p>
               </div>
               <img src="./assets/svg/arrow-bottom.svg" alt="arrow-bottom" />
+              <div
+                id="datepicker-inline"
+                inline-datepicker
+                data-date="08/20/2024"
+                class="absolute lg:left-0 -left-27 top-[54px] shadow z-[2]"
+              ></div>
             </div>
             <div
               class="flex justify-center items-center bg-[#473BF0] rounded-lg cursor-pointer w-[200px] h-[50px]"
