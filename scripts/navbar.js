@@ -11,17 +11,18 @@ const closeIcon = toggleButton.querySelector("img:nth-child(2)");
 const menuLists = document.getElementById("lists-menu");
 
 // Fonction qui bascule la visibilité du menu
-function toggleMenuVisibility(isVisible) {
+const toggleMenuVisibility = (isVisible) => {
   // Si le menu est visible, on cache l'icône hamburger et on affiche l'icône de fermeture, sinon l'inverse
   hamburgerIcon.style.display = isVisible ? "none" : "block";
   closeIcon.style.display = isVisible ? "block" : "none";
   // Le menu est affiché en "flex" si visible, sinon il est caché
   menuLists.style.display = isVisible ? "flex" : "none";
-}
+};
 
 // Fonction qui met à jour la visibilité du menu en fonction de la taille de la fenêtre
-function updateMenuVisibility() {
-  const isDesktop = window.innerWidth >= 1024; // Vérifie si la largeur de la fenêtre est au moins 1024px
+const updateMenuVisibility = () => {
+  // Vérifie si la largeur de la fenêtre est au moins 1024px
+  const isDesktop = window.innerWidth >= 1024;
   if (isDesktop) {
     // Si on est sur un écran desktop, on cache les icônes et on affiche directement le menu
     hamburgerIcon.style.display = "none";
@@ -33,7 +34,7 @@ function updateMenuVisibility() {
     // On ajuste la visibilité du menu en fonction de son état actuel
     toggleMenuVisibility(isMenuVisible);
   }
-}
+};
 
 // Ajoute un écouteur d'événement sur le bouton de bascule du menu
 toggleButton.addEventListener("click", () => {
