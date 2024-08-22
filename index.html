@@ -19,7 +19,7 @@
     ></script>
     <script defer src="./scripts/navbar.js"></script>
     <script defer src="./scripts/accordion.js"></script>
-    <script defer src="./scripts/datepicker.js"></script>
+    <script defer src="./scripts/selects.js"></script>
   </head>
   <!-- ******* END HEAD ********** -->
   <body>
@@ -92,6 +92,7 @@
             class="flex lg:flex-row flex-col justify-center items-center gap-4 bg-white lg:h-[95px] h-64 max-w-3xl lg:w-full w-[296px] rounded-[10px]"
           >
             <div
+              id="dropdownLocation"
               class="flex flex-row justify-evenly items-center gap-7 border-solid border-2 border-[#E8E9ED] rounded-lg cursor-pointer w-[250px] h-[50px] relative"
             >
               <div class="flex flex-row justify-center items-center gap-4">
@@ -100,8 +101,8 @@
               </div>
               <img src="./assets/svg/arrow-bottom.svg" alt="arrow-bottom" />
               <ul
-                id="dropdownLocation"
-                class="top-full absolute left-0 mt-2 w-[250px] border-none bg-white rounded-b-lg shadow h-[160px] overflow-y-auto z-[3]"
+                id="dropdownLocationList"
+                class="top-full absolute left-0 mt-2 w-[250px] border-none bg-white rounded-b-lg shadow h-[160px] overflow-y-auto z-[3] hidden"
               >
                 <li class="px-4 py-2 hover:bg-[#E8E9ED] cursor-pointer">
                   Canada
@@ -132,6 +133,7 @@
               </ul>
             </div>
             <div
+              id="dropdownDatepicker"
               class="flex flex-row justify-evenly items-center gap-14 border-solid border-2 border-[#E8E9ED] rounded-lg cursor-pointer w-[250px] h-[50px] relative"
             >
               <div class="flex flex-row justify-center items-center gap-4">
@@ -146,8 +148,8 @@
               <div
                 id="datepicker-inline"
                 inline-datepicker
-                data-date="08/20/2024"
-                class="absolute lg:left-0 -left-27 top-[54px] shadow z-[2]"
+                data-date="Date.now()"
+                class="absolute lg:left-0 -left-27 top-[54px] shadow z-[2] hidden"
               ></div>
             </div>
             <div
